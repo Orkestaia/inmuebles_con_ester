@@ -11,9 +11,9 @@ const recibirLead = trigger({
       path: 'ester-lead-v1',
       authentication: 'headerAuth',
       responseMode: 'onReceived',
-      options: { ignoreBots: true },
+      options: { ignoreBots: false },
     },
-    credentials: { httpHeaderAuth: { id: 'l9z2LZD1VweQIzNc', name: 'Ester lead · X-Lead-Secret' } },
+    credentials: { httpHeaderAuth: { id: 'ocMyo6n3YE9qgLLN', name: 'Ester lead - X-Lead-Secret' } },
   },
   output: [{ body: { origen: 'home', nombre: 'Prueba', telefono: '600123456', enlace_anuncio: 'https://www.idealista.com/inmueble/1/', tiempo_en_venta: '3-6-meses', consiente_contacto: true, consiente_llamada_asistente: false, event_id: 'abc-123', consent_marketing: false, utm: {}, ip_hash: 'x', user_agent: 'ua', ts: '2026-10-09T10:00:00Z', fuente: 'web' }, headers: {} }],
 });
@@ -31,7 +31,7 @@ const config = node({
         assignments: [
           { id: 'c1', name: 'cfg_email_ester', value: 'aitor@orkestaia.com', type: 'string' },
           { id: 'c2', name: 'cfg_telegram_aitor', value: '6674289801', type: 'string' },
-          { id: 'c3', name: 'cfg_web', value: 'https://inmuebles-con-ester.vercel.app', type: 'string' },
+          { id: 'c3', name: 'cfg_web', value: 'https://inmueblesconester.vercel.app', type: 'string' },
           { id: 'c4', name: 'cfg_whatsapp_ester', value: '', type: 'string' },
           { id: 'c5', name: 'cfg_meta_pixel_id', value: '', type: 'string' },
           { id: 'c6', name: 'cfg_sheet_id', value: '1sJ-h4GjozoxYF_QsjnJOWG7vEn3J453IhZKVweMcYqw', type: 'string' },
@@ -39,7 +39,7 @@ const config = node({
       },
     },
   },
-  output: [{ body: { origen: 'home', nombre: 'Prueba', telefono: '600123456' }, cfg_email_ester: 'aitor@orkestaia.com', cfg_telegram_aitor: '6674289801', cfg_web: 'https://inmuebles-con-ester.vercel.app', cfg_whatsapp_ester: '', cfg_meta_pixel_id: '', cfg_sheet_id: '1sJ-h4GjozoxYF_QsjnJOWG7vEn3J453IhZKVweMcYqw' }],
+  output: [{ body: { origen: 'home', nombre: 'Prueba', telefono: '600123456' }, cfg_email_ester: 'aitor@orkestaia.com', cfg_telegram_aitor: '6674289801', cfg_web: 'https://inmueblesconester.vercel.app', cfg_whatsapp_ester: '', cfg_meta_pixel_id: '', cfg_sheet_id: '1sJ-h4GjozoxYF_QsjnJOWG7vEn3J453IhZKVweMcYqw' }],
 });
 
 const normalizar = node({
@@ -121,7 +121,7 @@ return [{ json: {
 } }];`,
     },
   },
-  output: [{ fecha: '9/10/2026, 12:00:00', origen: 'home', origen_label: 'Web · home', nombre: 'Prueba', telefono: '+34600123456', email: '', piso: 'https://www.idealista.com/inmueble/1/', tiempo_en_venta: '3-6 meses', zona: '', dormitorios: '', presupuesto: '', plazo: '', quiere_llamada: 'no', consiente_llamada_asistente: 'no', estado: 'nuevo', repetido: 'no', es_repetido: false, es_guia: false, utm_source: '', utm_medium: '', utm_campaign: '', utm_content: '', referrer: '', landing: '/', event_id: 'abc-123', consent_marketing: 'no', fbp: '', fbc: '', user_agent: 'ua', ts: '2026-10-09T10:00:00Z', event_time: 1791540000, notas: '', cfg: { email_ester: 'aitor@orkestaia.com', telegram_aitor: '6674289801', web: 'https://inmuebles-con-ester.vercel.app', whatsapp_ester: '', meta_pixel_id: '', sheet_id: '1sJ-h4GjozoxYF_QsjnJOWG7vEn3J453IhZKVweMcYqw' } }],
+  output: [{ fecha: '9/10/2026, 12:00:00', origen: 'home', origen_label: 'Web · home', nombre: 'Prueba', telefono: '+34600123456', email: '', piso: 'https://www.idealista.com/inmueble/1/', tiempo_en_venta: '3-6 meses', zona: '', dormitorios: '', presupuesto: '', plazo: '', quiere_llamada: 'no', consiente_llamada_asistente: 'no', estado: 'nuevo', repetido: 'no', es_repetido: false, es_guia: false, utm_source: '', utm_medium: '', utm_campaign: '', utm_content: '', referrer: '', landing: '/', event_id: 'abc-123', consent_marketing: 'no', fbp: '', fbc: '', user_agent: 'ua', ts: '2026-10-09T10:00:00Z', event_time: 1791540000, notas: '', cfg: { email_ester: 'aitor@orkestaia.com', telegram_aitor: '6674289801', web: 'https://inmueblesconester.vercel.app', whatsapp_ester: '', meta_pixel_id: '', sheet_id: '1sJ-h4GjozoxYF_QsjnJOWG7vEn3J453IhZKVweMcYqw' } }],
 });
 
 const guardarEnHoja = node({
@@ -135,7 +135,7 @@ const guardarEnHoja = node({
       resource: 'sheet',
       operation: 'append',
       documentId: { __rl: true, mode: 'id', value: '1sJ-h4GjozoxYF_QsjnJOWG7vEn3J453IhZKVweMcYqw' },
-      sheetName: { __rl: true, mode: 'list', value: 'gid=0', cachedResultName: 'Leads' },
+      sheetName: { __rl: true, mode: 'list', value: '0', cachedResultName: 'Leads' },
       columns: {
         mappingMode: 'defineBelow',
         value: {

@@ -1,6 +1,12 @@
 import { absoluteUrl, comprar, guia, home, pisosData, pisoTitulo, site, sobre } from "@/lib/site";
 
-const limpiar = (t: string) => t.replace(/\s*\[[^\]]*\]\s*/g, " ").replace(/\s{2,}/g, " ").trim();
+/** Quita los marcadores pendientes de Ester ("[Apellido]") sin dejar espacios huérfanos. */
+export const limpiar = (t: string) =>
+  t
+    .replace(/\s*\[[^\]]*\]\s*/g, " ")
+    .replace(/\s+([,.;:)])/g, "$1")
+    .replace(/\s{2,}/g, " ")
+    .trim();
 
 /** llms.txt: índice corto para modelos de lenguaje. */
 export function llmsTxt(): string {

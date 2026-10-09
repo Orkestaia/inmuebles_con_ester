@@ -1,3 +1,4 @@
+import { limpiar } from "@/lib/llms";
 import { absoluteUrl, esMarcador, site, SITE_URL } from "@/lib/site";
 
 const telefono = esMarcador(site.contacto.telefonoVisible) ? undefined : site.contacto.telefonoVisible;
@@ -47,7 +48,7 @@ export function faqPage(items: { q: string; a: string }[]) {
     mainEntity: items.map((i) => ({
       "@type": "Question",
       name: i.q,
-      acceptedAnswer: { "@type": "Answer", text: i.a.replace(/\[[^\]]*\]/g, "").replace(/\s{2,}/g, " ").trim() },
+      acceptedAnswer: { "@type": "Answer", text: limpiar(i.a) },
     })),
   };
 }
