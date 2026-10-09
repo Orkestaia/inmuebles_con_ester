@@ -10,7 +10,7 @@ export function Problema() {
       <div className="mt-10 grid gap-5 md:grid-cols-3">
         {p.tarjetas.map((t, i) => (
           <article key={t.titulo} className="rounded-2xl border border-linea bg-crema p-6">
-            <p className="font-display text-4xl text-rosa">0{i + 1}</p>
+            <p className="font-display text-4xl text-rosa-oscuro">0{i + 1}</p>
             <h3 className="mt-3 font-display text-xl leading-snug text-tinta">{t.titulo}</h3>
             <p className="mt-2 leading-relaxed text-tinta-suave">{t.texto}</p>
           </article>

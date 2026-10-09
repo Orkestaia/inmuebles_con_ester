@@ -35,7 +35,7 @@ export default function GuiaPage() {
           <div className="mx-auto max-w-3xl space-y-12 guia-prose">
             {guia.errores.map((e, i) => (
               <article key={e.q}>
-                <p className="font-display text-4xl text-rosa">0{i + 1}</p>
+                <p className="font-display text-4xl text-rosa-oscuro">0{i + 1}</p>
                 <h2 className="mt-2 font-display text-2xl leading-snug text-tinta sm:text-3xl">{e.q}</h2>
                 <p className="mt-4 text-lg">{e.a}</p>
               </article>

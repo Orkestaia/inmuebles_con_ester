@@ -19,6 +19,7 @@ export function Hero({ sinSecundario = false }: { sinSecundario?: boolean }) {
               priority
               fetchPriority="high"
               sizes="(min-width: 768px) 45vw, 90vw"
+              quality={72}
               className="object-cover object-top"
             />
           </div>

@@ -42,7 +42,7 @@ export default function ComprarPage() {
           <ol className="mt-8 grid gap-5 md:grid-cols-3">
             {comprar.comoTrabajo.pasos.map((p, i) => (
               <li key={p.titulo} className="rounded-2xl border border-linea bg-crema p-6">
-                <span className="font-display text-4xl text-rosa">0{i + 1}</span>
+                <span className="font-display text-4xl text-rosa-oscuro">0{i + 1}</span>
                 <h3 className="mt-3 font-display text-xl text-tinta">{p.titulo}</h3>
                 <p className="mt-2 leading-relaxed text-tinta-suave">{p.texto}</p>
               </li>

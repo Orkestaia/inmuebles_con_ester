@@ -1,7 +1,7 @@
 import type { InputHTMLAttributes, ReactNode, SelectHTMLAttributes } from "react";
 
 const base =
-  "w-full rounded-xl border border-linea bg-blanco px-4 py-3 text-base text-tinta placeholder:text-tinta-suave/60 focus:border-ciruela focus:outline-none focus:ring-2 focus:ring-ciruela/20";
+  "w-full rounded-xl border border-linea bg-blanco px-4 py-3 text-base text-tinta placeholder:text-tinta-suave focus:border-ciruela focus:outline-none focus:ring-2 focus:ring-ciruela/20";
 
 export function Campo({ id, label, ayuda, error, children }: { id: string; label: string; ayuda?: string; error?: string; children: ReactNode }) {
   return (

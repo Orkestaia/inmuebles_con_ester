@@ -135,7 +135,7 @@ const guardarEnHoja = node({
       resource: 'sheet',
       operation: 'append',
       documentId: { __rl: true, mode: 'id', value: '1sJ-h4GjozoxYF_QsjnJOWG7vEn3J453IhZKVweMcYqw' },
-      sheetName: { __rl: true, mode: 'list', value: '0', cachedResultName: 'Leads' },
+      sheetName: { __rl: true, mode: 'name', value: 'Leads' },
       columns: {
         mappingMode: 'defineBelow',
         value: {
