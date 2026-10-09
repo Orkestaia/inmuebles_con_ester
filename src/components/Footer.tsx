@@ -59,7 +59,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 flex flex-col gap-2 border-t border-linea pt-6 text-xs text-tinta-suave/80 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-10 flex flex-col gap-2 border-t border-linea pt-6 text-xs text-tinta-suave sm:flex-row sm:items-center sm:justify-between">
           <p>© {new Date().getFullYear()} {site.nombre}. Madrid.</p>
           <a href={site.orkesta.href} target="_blank" rel="noopener noreferrer" className="hover:text-ciruela">
             {site.orkesta.label}
