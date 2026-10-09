@@ -11,3 +11,5 @@ next-env.d.ts
 npm-debug.log*
 # Material original de Ester (fotos sin optimizar) no va al repo
 /originales
+
+.vercel
