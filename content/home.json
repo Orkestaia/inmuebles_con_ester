@@ -1,0 +1,131 @@
+{
+  "hero": {
+    "h1": "Vendo pisos en Madrid que llevan meses sin venderse.",
+    "sub": "Si tu piso está en los portales y no llega el comprador, casi siempre es por las fotos, el anuncio o el precio. Mándame el enlace y te digo en 24 horas qué está fallando. Sin compromiso.",
+    "ctaPrincipal": "Quiero saber por qué no se vende",
+    "ctaSecundario": "Escribirme por WhatsApp",
+    "confianza": [
+      "Desde 2018",
+      "Trato directo conmigo, no con un comercial",
+      "[Solo cobro si vendo]",
+      "Madrid y alrededores"
+    ],
+    "imagenAlt": "Ester, agente inmobiliaria en Madrid, con americana ciruela y los brazos cruzados"
+  },
+  "problema": {
+    "titulo": "Por qué un piso se queda meses en el portal",
+    "tarjetas": [
+      {
+        "titulo": "Fotos que no enseñan el piso.",
+        "texto": "Hechas con prisa, a oscuras, con la casa sin preparar. El comprador pasa de largo en dos segundos."
+      },
+      {
+        "titulo": "Un anuncio que no cuenta nada.",
+        "texto": "«Piso luminoso, bien comunicado.» Igual que otros 3.000. Nadie llama."
+      },
+      {
+        "titulo": "Meses en el portal.",
+        "texto": "Cuanto más tiempo lleva, más desconfía el comprador y más baja la oferta. El tiempo te cuesta dinero."
+      }
+    ]
+  },
+  "pasos": {
+    "titulo": "Qué hago yo",
+    "lista": [
+      {
+        "titulo": "Miro tu anuncio y te digo la verdad.",
+        "texto": "En 24 horas, por WhatsApp, tres cosas concretas que están frenando la venta."
+      },
+      {
+        "titulo": "Preparo el piso y el anuncio.",
+        "texto": "Fotos nuevas, texto que explica por qué este piso y no otro, precio con cabeza."
+      },
+      {
+        "titulo": "Enseño el piso yo.",
+        "texto": "Conozco la vivienda, acompaño cada visita y hago seguimiento de cada interesado."
+      },
+      {
+        "titulo": "Te acompaño hasta la firma.",
+        "texto": "Contratos, documentación, tasadores, gestoría y notaría con profesionales de confianza."
+      }
+    ]
+  },
+  "formulario": {
+    "titulo": "Te digo en 24 h por qué tu piso no se vende",
+    "intro": "Déjame tu nombre, tu teléfono y el enlace de tu anuncio. Lo miro yo y te contesto por WhatsApp.",
+    "campos": {
+      "nombre": "Nombre",
+      "telefono": "Teléfono",
+      "enlace": "Enlace de tu anuncio",
+      "enlaceAyuda": "Si no lo tienes publicado, cuéntame la zona y el tipo de piso.",
+      "zonaTipo": "Zona y tipo de piso",
+      "tiempo": "¿Desde cuándo está a la venta?",
+      "tiempoOpciones": [
+        { "value": "no-publicado", "label": "Aún no lo he publicado" },
+        { "value": "menos-1-mes", "label": "Menos de 1 mes" },
+        { "value": "1-3-meses", "label": "Entre 1 y 3 meses" },
+        { "value": "3-6-meses", "label": "Entre 3 y 6 meses" },
+        { "value": "mas-6-meses", "label": "Más de 6 meses" }
+      ],
+      "consentimiento": "He leído la política de privacidad y acepto que Ester me contacte por WhatsApp o teléfono para responder a mi consulta.",
+      "consentimientoAsistente": "Acepto que me llame un asistente de Ester para concretar la hora de la llamada.",
+      "boton": "Enviar y recibir mi diagnóstico en 24 h",
+      "enviando": "Enviando…",
+      "nota": "Tus datos solo los ve Ester. No se comparten con nadie ni se venden."
+    }
+  },
+  "vendidos": {
+    "titulo": "Algunos pisos que he vendido",
+    "texto": "Viviendas reales, en barrios reales. Sin número de portal, por respeto a quienes viven ahora en ellas.",
+    "enlace": "Ver todos los pisos vendidos"
+  },
+  "sobre": {
+    "titulo": "Soy Ester",
+    "texto": "Empecé en 2018 de la mano de mi tía, que llevaba muchos años en esto. Ella me enseñó que detrás de cada vivienda hay una historia, una familia y una decisión importante. Desde entonces acompaño a propietarios que quieren vender y a personas que buscan su próxima casa. Soy yo quien está al otro lado del teléfono, quien conoce el piso, quien acompaña las visitas y quien te mantiene informado en cada paso. Gran parte de mis clientes llegan recomendados por personas a las que ya he ayudado, y para mí no hay mejor reconocimiento.",
+    "enlace": "Conocer a Ester",
+    "imagenAlt": "Ester con blusa blanca y pañuelo, sonriendo"
+  },
+  "comprador": {
+    "titulo": "También busco la casa que necesitas.",
+    "texto": "Si llevas tiempo mirando y no encuentras lo que buscas, cuéntame qué necesitas. Busco opciones, las filtro y te acompaño hasta la firma. Como un personal shopper inmobiliario.",
+    "boton": "Contarle a Ester qué busco"
+  },
+  "faq": {
+    "titulo": "Preguntas que me hacen casi todos los propietarios",
+    "lista": [
+      {
+        "q": "¿Cuánto cobras por vender mi piso?",
+        "a": "Una comisión sobre el precio de venta, que acordamos antes de empezar [y que solo cobro cuando el piso está vendido]. Te lo explico en la primera llamada, sin letra pequeña."
+      },
+      {
+        "q": "¿Qué pasa si ya tengo el piso en idealista o en otra agencia?",
+        "a": "Puedes seguir teniéndolo. Lo que cambio es cómo se presenta y a quién se le enseña. [Pendiente de Ester: exclusiva sí o no.]"
+      },
+      {
+        "q": "¿En qué zonas de Madrid trabajas?",
+        "a": "En toda la ciudad y alrededores. He vendido en Barrio del Pilar, Hortaleza, Valdezarza, Tetuán, Carabanchel y San Sebastián de los Reyes, entre otros. No hay zonas buenas o malas: cada piso tiene su comprador."
+      },
+      {
+        "q": "¿La valoración es gratis?",
+        "a": "Sí. Te doy una valoración orientativa basada en lo que se está vendiendo en tu zona. No es una tasación oficial: si la necesitas, trabajo con tasadores de confianza."
+      },
+      {
+        "q": "¿Cuánto tardas en vender?",
+        "a": "Depende del piso, del precio y de la zona. Lo que sí te puedo decir es cuánto llevan los pisos parecidos al tuyo y qué hay que cambiar para que el tuyo no se quede meses parado."
+      },
+      {
+        "q": "¿Tengo que hacer obras o reformar?",
+        "a": "Casi nunca. Normalmente basta con preparar el piso para las fotos y las visitas. Si hace falta algo más, tengo reformistas y diseñadores de confianza."
+      },
+      {
+        "q": "¿Hablaré contigo o con un comercial?",
+        "a": "Conmigo. Desde la primera llamada hasta la notaría."
+      }
+    ]
+  },
+  "cierre": {
+    "titulo": "Mándame el enlace de tu anuncio. Te digo en 24 horas por qué no se vende.",
+    "boton": "Ir al formulario",
+    "botonWhatsapp": "Escribirme por WhatsApp"
+  }
+}

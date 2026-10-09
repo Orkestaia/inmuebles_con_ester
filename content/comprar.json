@@ -1,0 +1,54 @@
+{
+  "titulo": "Busco la casa que necesitas.",
+  "sub": "Si llevas tiempo mirando y no encuentras lo que buscas, cuéntame qué necesitas. Busco opciones, las filtro y te acompaño hasta la firma. Como un personal shopper inmobiliario.",
+  "comoTrabajo": {
+    "titulo": "Cómo trabajo con compradores",
+    "pasos": [
+      {
+        "titulo": "Escucho lo que necesitas.",
+        "texto": "Zona, tamaño, presupuesto, plazo y lo que no sale en los filtros de un portal: luz, silencio, cómo quieres vivir."
+      },
+      {
+        "titulo": "Busco y filtro.",
+        "texto": "Uso mi experiencia y mi red de contactos para localizar viviendas que encajen, incluso las que todavía no están en mi cartera."
+      },
+      {
+        "titulo": "Te acompaño hasta la firma.",
+        "texto": "Visitas, negociación, documentación, tasación y notaría con profesionales de confianza."
+      }
+    ]
+  },
+  "formulario": {
+    "titulo": "Cuéntame qué buscas",
+    "intro": "Con esto me hago una idea. Te escribo en menos de 24 horas para concretar.",
+    "campos": {
+      "nombre": "Nombre",
+      "telefono": "Teléfono",
+      "zona": "Zona o zonas que te interesan",
+      "dormitorios": "Dormitorios",
+      "dormitoriosOpciones": [
+        { "value": "1", "label": "1" },
+        { "value": "2", "label": "2" },
+        { "value": "3", "label": "3" },
+        { "value": "4+", "label": "4 o más" }
+      ],
+      "presupuesto": "Presupuesto aproximado",
+      "presupuestoOpciones": [
+        { "value": "hasta-200", "label": "Hasta 200.000 €" },
+        { "value": "200-300", "label": "200.000 – 300.000 €" },
+        { "value": "300-450", "label": "300.000 – 450.000 €" },
+        { "value": "450-700", "label": "450.000 – 700.000 €" },
+        { "value": "mas-700", "label": "Más de 700.000 €" }
+      ],
+      "plazo": "¿Para cuándo?",
+      "plazoOpciones": [
+        { "value": "ya", "label": "Lo antes posible" },
+        { "value": "3-meses", "label": "En los próximos 3 meses" },
+        { "value": "6-meses", "label": "En los próximos 6 meses" },
+        { "value": "sin-prisa", "label": "Sin prisa, estoy mirando" }
+      ],
+      "boton": "Enviar a Ester",
+      "nota": "Tus datos solo los ve Ester. No se comparten con nadie ni se venden."
+    }
+  }
+}

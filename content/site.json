@@ -1,0 +1,40 @@
+{
+  "_nota": "Todo lo que va entre corchetes [así] es un marcador pendiente de Ester. Se sustituye aquí y cambia en toda la web.",
+  "nombre": "Inmuebles con Ester",
+  "firma": "Ester · Inmuebles en Madrid",
+  "descripcionEntidad": "Inmuebles con Ester es el servicio de Ester [Apellido], agente inmobiliaria independiente en Madrid desde 2018, especializada en vender viviendas que llevan meses en el mercado y en buscar casa para compradores.",
+  "ester": {
+    "nombre": "Ester",
+    "apellidos": "[Apellidos]",
+    "desde": 2018
+  },
+  "contacto": {
+    "email": "hola@inmueblesconester.com",
+    "telefonoVisible": "[Teléfono]",
+    "instagram": "inmueblesconester",
+    "instagramUrl": "https://www.instagram.com/inmueblesconester/"
+  },
+  "legal": {
+    "titular": "[Nombre y apellidos / razón social]",
+    "nif": "[NIF]",
+    "direccion": "[Dirección postal]",
+    "actualizado": "9 de octubre de 2026"
+  },
+  "zonas": [
+    "Barrio del Pilar",
+    "Hortaleza",
+    "Valdezarza",
+    "Tetuán",
+    "Carabanchel",
+    "San Sebastián de los Reyes"
+  ],
+  "menu": [
+    { "label": "Vender", "href": "/#vender" },
+    { "label": "Comprar", "href": "/comprar" },
+    { "label": "Vendidos", "href": "/vendidos" },
+    { "label": "Sobre Ester", "href": "/sobre-ester" }
+  ],
+  "ctaMenu": { "label": "Hablar con Ester", "href": "/#formulario" },
+  "whatsappMensaje": "Hola Ester, tengo un piso en venta y quiero saber por qué no se vende.",
+  "orkesta": { "label": "Web por Orkesta", "href": "https://orkestaia.com" }
+}

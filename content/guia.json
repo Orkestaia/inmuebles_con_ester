@@ -1,0 +1,48 @@
+{
+  "_nota": "BORRADOR escrito por Orkesta a partir del brief. Ester tiene que validar o reescribir cada error con su experiencia real (audio de 5 min pendiente). El PDF aún no existe: el formulario lo pide y n8n lo enviará cuando esté.",
+  "titulo": "¿Por qué no se vende mi piso?",
+  "sub": "Siete errores que veo una y otra vez en anuncios que llevan meses en los portales. Y qué haría yo en cada caso.",
+  "actualizado": "octubre de 2026",
+  "errores": [
+    {
+      "q": "¿Las fotos están enseñando el piso o escondiéndolo?",
+      "a": "La mayoría de los anuncios parados tienen fotos hechas con el móvil, a oscuras, con la cama sin hacer o la cocina llena de cosas. El comprador decide en dos segundos si sigue mirando. Un piso con buena luz, ordenado y fotografiado desde las esquinas (no desde la puerta) recibe más visitas con el mismo precio. Es lo primero que cambio."
+    },
+    {
+      "q": "¿El anuncio cuenta algo que no cuenten otros 3.000?",
+      "a": "«Piso luminoso, bien comunicado, para entrar a vivir.» Lo dicen todos. El comprador necesita saber por qué este piso y no el de al lado: la orientación real, qué se ve desde la ventana, cómo es la comunidad, cuánto se paga de gastos, qué se puede hacer con la terraza. Un texto concreto filtra a los curiosos y atrae a quien de verdad encaja."
+    },
+    {
+      "q": "¿El precio está puesto con cabeza o con esperanza?",
+      "a": "Es normal pensar que el piso vale lo que tú necesitas, o lo que pedía el vecino. Pero el comprador compara con todo lo que hay a la venta en tu zona, hoy. Un precio alto no se corrige solo: cada mes que pasa, el anuncio pierde posiciones y el comprador asume que algo falla. Mejor salir bien al mercado que ir bajando poco a poco."
+    },
+    {
+      "q": "¿Cuántos meses lleva publicado y qué le dice eso al comprador?",
+      "a": "Los portales muestran cuánto tiempo lleva un anuncio y cuántas veces ha bajado de precio. Un piso con muchos meses y varias bajadas transmite desconfianza y atrae ofertas a la baja. A veces lo más sensato es retirar el anuncio, prepararlo bien y volver a publicarlo como si fuera nuevo."
+    },
+    {
+      "q": "¿Quién responde cuando alguien pregunta?",
+      "a": "Muchos propietarios no pueden atender el teléfono en horario de trabajo, tardan días en contestar mensajes o no pueden enseñar el piso entre semana. Cada interesado que no recibe respuesta en pocas horas se va al siguiente anuncio. Una parte de mi trabajo es que nadie se quede sin respuesta y que las visitas se hagan cuando el comprador puede."
+    },
+    {
+      "q": "¿Cómo se está enseñando el piso en las visitas?",
+      "a": "Enseñar un piso no es abrir la puerta. Es preparar la casa antes, conocer sus puntos fuertes y sus pegas, responder con honestidad y hacer seguimiento después. Un piso enseñado con prisa, con la persiana bajada o con la familia dentro pierde compradores que sí estaban interesados."
+    },
+    {
+      "q": "¿Tienes la documentación lista para cuando aparezca el comprador?",
+      "a": "Nota simple, certificado energético, recibos de comunidad e IBI, cargas y situación de la hipoteca. Cuando por fin llega una oferta y falta algo, la operación se enfría y el comprador se va. Yo preparo la carpeta antes de publicar, para que la venta no se pare cuando hay que correr."
+    }
+  ],
+  "formulario": {
+    "titulo": "Llévate la guía en PDF",
+    "intro": "Te la envío por correo. Si quieres, también te llamo para mirar tu caso.",
+    "campos": {
+      "nombre": "Nombre",
+      "email": "Correo electrónico",
+      "telefono": "Teléfono",
+      "quiereLlamada": "Quiero que Ester me llame para mirar mi anuncio",
+      "boton": "Enviar la guía a mi correo",
+      "nota": "Solo te escribe Ester. Nada de listas ni de correos automáticos semanales."
+    }
+  }
+}

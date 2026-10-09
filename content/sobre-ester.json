@@ -1,0 +1,41 @@
+{
+  "titulo": "Una forma diferente de entender el mundo inmobiliario",
+  "intro": "Inmuebles con Ester es el servicio de Ester [Apellido], agente inmobiliaria independiente en Madrid desde 2018, especializada en vender viviendas que llevan meses en el mercado y en buscar casa para compradores.",
+  "imagenAlt": "Ester con blusa blanca y pañuelo, con los brazos cruzados",
+  "secciones": [
+    {
+      "titulo": "Cómo empecé",
+      "parrafos": [
+        "Mi historia en el sector inmobiliario comenzó en 2018, de la mano de mi tía. Después de muchos años dedicándose a esto, fue ella quien me enseñó esta profesión y quien me transmitió algo que para mí sigue siendo fundamental: que detrás de cada vivienda hay una historia, una familia y una decisión importante.",
+        "Desde entonces acompaño tanto a propietarios que confían en mí para vender su vivienda como a personas que buscan su próximo hogar. Si algo he aprendido es que cada persona, cada vivienda y cada operación son diferentes."
+      ]
+    },
+    {
+      "titulo": "Cómo trabajo",
+      "parrafos": [
+        "Con los años he desarrollado mi propia forma de trabajar, basada en algo que considero imprescindible: la atención personal, la confianza y el acompañamiento constante.",
+        "Cuando un propietario me confía la venta de su vivienda, mi compromiso empieza desde el primer momento y termina cuando todo el proceso ha finalizado. Soy yo quien está al otro lado del teléfono, quien conoce la propiedad, quien acompaña las visitas, quien hace el seguimiento de cada interesado y quien te mantiene informado en cada paso.",
+        "Cada vivienda es especial y necesita una atención especial. Por eso no trabajo únicamente una zona concreta. He vendido en distintos barrios de Madrid y he aprendido que no existen zonas buenas o malas, ni viviendas que merezcan más o menos dedicación. Mi trabajo consiste en conocer cada propiedad, ponerla en valor y encontrar a la persona adecuada para ella."
+      ]
+    },
+    {
+      "titulo": "También busco la casa que necesitas",
+      "parrafos": [
+        "Mi trabajo con los compradores va más allá de enseñar viviendas. Busco activamente casas para personas que todavía no han encontrado lo que están buscando: escucho lo que necesitan, uso mi experiencia y mi red de contactos, y localizo viviendas que puedan encajar, incluso cuando todavía no están en mi cartera. Casi como un personal shopper inmobiliario: busco opciones, las filtro y te acompaño hasta encontrar esa casa que encaje con tu nueva etapa."
+      ]
+    },
+    {
+      "titulo": "Te acompaño de principio a fin",
+      "parrafos": [
+        "Mi trabajo tampoco termina cuando encontramos al comprador. Junto con mi equipo de profesionales de confianza, me encargo de la preparación y gestión de contratos y documentación, y cuento con tasadores, gestorías, notarías, diseñadores y reformistas para todo lo que haga falta. La idea es sencilla: que tengas a alguien de confianza a tu lado desde el primer día hasta el último."
+      ]
+    },
+    {
+      "titulo": "La confianza se construye",
+      "parrafos": [
+        "Una de las cosas que más valoro de mi trayectoria es que gran parte de mis clientes llegan recomendados por personas a las que ya he ayudado. Para mí no hay mejor reconocimiento. Es el resultado de una forma de trabajar muy sencilla: estar presente, escuchar, cuidar cada detalle y tratar cada operación como si fuera la única.",
+        "Porque una vivienda puede ser una propiedad, pero para quien la vende o la compra significa mucho más. Y ahí es donde quiero estar: acompañándote personalmente para que todo el proceso sea más sencillo, más claro y más tranquilo."
+      ]
+    }
+  ]
+}
