@@ -72,7 +72,7 @@ export function BotonEnviar({ children, cargando }: { children: ReactNode; carga
     <button
       type="submit"
       disabled={cargando}
-      className="w-full rounded-full bg-ciruela px-6 py-4 text-base font-semibold text-blanco transition-colors hover:bg-ciruela-oscuro disabled:cursor-wait disabled:opacity-70"
+      className="w-full rounded-lg bg-ciruela px-6 py-4 text-base font-semibold text-blanco transition-colors hover:bg-ciruela-oscuro disabled:cursor-wait disabled:opacity-70"
     >
       {children}
     </button>

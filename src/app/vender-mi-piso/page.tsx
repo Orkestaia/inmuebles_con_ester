@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Nav } from "@/components/Nav";
+import { Logo } from "@/components/Logo";
 import { Marcador } from "@/components/Marcador";
+import { Nav } from "@/components/Nav";
 import { FormSection } from "@/components/home/FormSection";
 import { Hero } from "@/components/home/Hero";
 import { Pasos } from "@/components/home/Pasos";
 import { Problema } from "@/components/home/Problema";
+import { Valores } from "@/components/home/Valores";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Vender mi piso en Madrid: te digo en 24 h por qué no se vende",
+  title: "Vender mi casa en Madrid: te digo en 24 h por qué no se vende",
   description:
     "¿Tu piso lleva meses en idealista o Fotocasa sin venderse? Mándame el enlace y te digo en 24 horas qué está fallando. Ester, agente inmobiliaria en Madrid.",
   alternates: { canonical: "/vender-mi-piso" },
@@ -25,13 +27,17 @@ export default function VenderMiPisoPage() {
       <Nav minimal />
       <main>
         <Hero sinSecundario />
+        <Valores />
         <Problema />
         <Pasos />
         <FormSection origen="vender" />
       </main>
-      <footer className="border-t border-linea bg-crema-oscuro/60 py-8 text-center text-xs text-tinta-suave">
-        <p>
-          {site.nombre} · <Marcador texto={site.legal.titular} /> · <Marcador texto={site.legal.nif} /> ·{" "}
+      <footer className="papel border-t border-linea py-10 text-center text-xs text-tinta-suave">
+        <div className="flex justify-center">
+          <Logo />
+        </div>
+        <p className="mt-4">
+          <Marcador texto={site.legal.titular} /> · <Marcador texto={site.legal.nif} /> ·{" "}
           <a href={`mailto:${site.contacto.email}`} className="hover:text-ciruela">
             {site.contacto.email}
           </a>

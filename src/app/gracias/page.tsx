@@ -39,7 +39,7 @@ export default async function GraciasPage({ searchParams }: { searchParams: Prom
       <Nav />
       <main className="flex flex-1 items-center bg-crema py-16 sm:py-24">
         <div className="mx-auto max-w-2xl px-4 text-center sm:px-6">
-          <span className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-verde text-blanco" aria-hidden="true">
+          <span className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-ciruela text-blanco" aria-hidden="true">
             <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
               <path d="M5 13l4 4L19 7" />
             </svg>
@@ -47,8 +47,8 @@ export default async function GraciasPage({ searchParams }: { searchParams: Prom
           <Titulo as="h1" className="mt-6 text-tinta">{t.titulo}</Titulo>
           <p className="mt-4 text-lg leading-relaxed text-tinta-suave">{t.texto}</p>
           <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
-            <WhatsAppLink lugar="gracias" label="Escribirme por WhatsApp" className="rounded-full bg-verde px-7 py-4 font-semibold text-blanco transition-colors hover:brightness-95" />
-            <a href={site.contacto.instagramUrl} target="_blank" rel="noopener noreferrer" className="rounded-full border border-tinta/20 px-7 py-4 font-semibold text-tinta transition-colors hover:border-ciruela hover:text-ciruela">
+            <WhatsAppLink lugar="gracias" label="Escribirme por WhatsApp" className="rounded-lg bg-ciruela px-7 py-4 font-semibold text-blanco transition-colors hover:bg-ciruela-oscuro" />
+            <a href={site.contacto.instagramUrl} target="_blank" rel="noopener noreferrer" className="rounded-lg border border-ciruela px-7 py-4 font-semibold text-tinta transition-colors hover:border-ciruela hover:text-ciruela">
               Seguirme en Instagram
             </a>
           </div>

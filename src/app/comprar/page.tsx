@@ -25,13 +25,13 @@ export default function ComprarPage() {
           <div className="mx-auto grid max-w-6xl items-center gap-8 px-4 pt-10 pb-14 sm:px-6 md:grid-cols-[1.1fr_0.9fr] md:gap-12 md:pt-16 md:pb-20">
             <div>
               <Etiqueta className="text-ciruela">Para compradores</Etiqueta>
-              <Titulo as="h1" className="text-[2.1rem] text-tinta sm:text-5xl">{comprar.titulo}</Titulo>
+              <Titulo as="h1" className="text-[2.1rem] text-ciruela sm:text-5xl">{comprar.titulo}</Titulo>
               <p className="mt-5 max-w-xl text-lg leading-relaxed text-tinta-suave">{comprar.sub}</p>
-              <a href="#formulario" className="mt-8 inline-block rounded-full bg-ciruela px-7 py-4 font-semibold text-blanco transition-colors hover:bg-ciruela-oscuro">
+              <a href="#formulario" className="mt-8 inline-block rounded-lg bg-ciruela px-7 py-4 font-semibold text-blanco transition-colors hover:bg-ciruela-oscuro">
                 Contarle a Ester qué busco
               </a>
             </div>
-            <div className="relative mx-auto aspect-[4/5] w-full max-w-xs overflow-hidden rounded-[2rem] bg-crema-oscuro md:max-w-sm">
+            <div className="relative mx-auto aspect-[4/5] w-full max-w-xs overflow-hidden rounded-[1.5rem] bg-crema-oscuro md:max-w-sm">
               <Image src="/img/ester/ester-sonrisa.jpg" alt="Ester sonriendo, con americana ciruela y pañuelo" fill priority sizes="(min-width: 768px) 40vw, 80vw" className="object-cover object-top" />
             </div>
           </div>
@@ -42,7 +42,7 @@ export default function ComprarPage() {
           <ol className="mt-8 grid gap-5 md:grid-cols-3">
             {comprar.comoTrabajo.pasos.map((p, i) => (
               <li key={p.titulo} className="rounded-2xl border border-linea bg-crema p-6">
-                <span className="font-display text-4xl text-rosa-oscuro">0{i + 1}</span>
+                <span className="font-display text-3xl text-dorado italic">0{i + 1}</span>
                 <h3 className="mt-3 font-display text-xl text-tinta">{p.titulo}</h3>
                 <p className="mt-2 leading-relaxed text-tinta-suave">{p.texto}</p>
               </li>

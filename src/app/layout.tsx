@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Fraunces, Source_Sans_3 } from "next/font/google";
+import { Great_Vibes, Playfair_Display, Source_Sans_3 } from "next/font/google";
 import type { ReactNode } from "react";
 import "./globals.css";
 import { Analytics } from "@/components/Analytics";
@@ -8,11 +8,18 @@ import { UtmCapture } from "@/components/UtmCapture";
 import { JsonLd, realEstateAgent } from "@/lib/jsonld";
 import { NOINDEX, site, SITE_URL } from "@/lib/site";
 
-const fraunces = Fraunces({
+const playfair = Playfair_Display({
   subsets: ["latin"],
-  variable: "--font-fraunces",
+  variable: "--font-playfair",
   display: "swap",
-  axes: ["opsz", "SOFT"],
+  style: ["normal", "italic"],
+});
+
+const script = Great_Vibes({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-script",
+  display: "swap",
 });
 
 const sourceSans = Source_Sans_3({
@@ -24,11 +31,11 @@ const sourceSans = Source_Sans_3({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Vendo pisos en Madrid que no se venden | Inmuebles con Ester",
+    default: "Vender tu casa en Madrid con Ester | Inmuebles con Ester",
     template: "%s | Inmuebles con Ester",
   },
   description:
-    "Si tu piso lleva meses en los portales, mándame el enlace y te digo en 24 horas qué está fallando. Ester, agente inmobiliaria en Madrid desde 2018.",
+    "Soy Ester, agente inmobiliaria independiente en Madrid desde 2018. Si tu piso lleva meses en los portales, mándame el enlace y te digo en 24 horas qué está fallando.",
   applicationName: site.nombre,
   authors: [{ name: "Ester", url: `${SITE_URL}/sobre-ester` }],
   openGraph: {
@@ -47,14 +54,14 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#7A1F5C",
+  themeColor: "#6E2A46",
   width: "device-width",
   initialScale: 1,
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="es-ES" className={`${fraunces.variable} ${sourceSans.variable} h-full antialiased`}>
+    <html lang="es-ES" className={`${playfair.variable} ${script.variable} ${sourceSans.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col">
         <JsonLd data={realEstateAgent} />
         {children}

@@ -13,8 +13,8 @@ aviso al instante.
 
 ## Stack
 
-Next.js 16 (App Router, Turbopack) · TypeScript · Tailwind 4 · `next/image` · `next/font` (Fraunces +
-Source Sans 3) · zod · Cloudflare Turnstile · n8n Cloud. Sin base de datos: todo el contenido vive en
+Next.js 16 (App Router, Turbopack) · TypeScript · Tailwind 4 · `next/image` · `next/font` (Playfair Display +
+Great Vibes + Source Sans 3) · zod · Cloudflare Turnstile · n8n Cloud. Sin base de datos: todo el contenido vive en
 `content/*.json` y las páginas se generan estáticas en el build. Solo `/api/lead` y `/gracias` son dinámicas.
 
 ## Mapa
@@ -91,7 +91,8 @@ En `content/pisos.json`, añadir un objeto al array `pisos`:
 ```
 
 Foto: ≤ 150 KB en `public/img/pisos/`. Con `node scripts/optimize-images.mjs "<carpeta>"` se
-convierten las originales (se puede adaptar). `mesesAntes`/`mesesConEster` en `null` hasta que Ester los pase.
+convierten las originales (se puede adaptar). Las fotos y el estilo de Ester del 26-oct se generan con
+`node scripts/estilo-ester.mjs` a partir de `info_ester/` (ver `docs/estilo-ester-2026-10-26.md`). `mesesAntes`/`mesesConEster` en `null` hasta que Ester los pase.
 La home enseña los 4 primeros del array.
 
 ## Flujo del formulario

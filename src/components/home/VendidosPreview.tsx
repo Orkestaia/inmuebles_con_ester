@@ -10,8 +10,8 @@ export function VendidosPreview() {
     <Seccion fondo="blanco">
       <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
         <div>
-          <Etiqueta className="text-ciruela">Pisos vendidos</Etiqueta>
-          <Titulo className="text-tinta">{v.titulo}</Titulo>
+          <Etiqueta className="text-ciruela">{v.eyebrow}</Etiqueta>
+          <Titulo className="text-ciruela">{v.titulo}</Titulo>
           <p className="mt-3 max-w-lg leading-relaxed text-tinta-suave">{v.texto}</p>
         </div>
         <Link href="/vendidos" className="shrink-0 font-semibold text-ciruela underline-offset-4 hover:underline">

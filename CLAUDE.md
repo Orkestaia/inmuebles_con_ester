@@ -20,6 +20,12 @@ Next.js 16 + TS + Tailwind 4, SSG. Contenido en `content/*.json` (el copy nunca 
 Producción: https://inmueblesconester.vercel.app (con `noindex` hasta tener dominio).
 README.md: ejecutar, variables, cambiar textos/pisos, probar el formulario, desplegar.
 
+## Marca (desde el 26-oct-2026, material de Ester)
+
+Logo `Logo.tsx` (INMUEBLES / con / *Ester* caligráfico / MADRID con llave). Vino `#6E2A46` sobre crema papel `#F7F1E8`,
+dorado discreto; Playfair Display + Great Vibes + Source Sans 3. Fotos de Ester en salón (`public/img/ester/ester-salon-*.jpg`).
+Qué cambió y qué debe confirmar JARVIS: `docs/estilo-ester-2026-10-26.md`. Material original: `info_ester/` (fuera del repo).
+
 ## Reglas específicas
 
 - **La voz es de Ester:** primera persona, frases cortas, sin exclamaciones. Palabras suyas: vivienda,

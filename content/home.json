@@ -1,18 +1,35 @@
 {
   "hero": {
-    "h1": "Vendo pisos en Madrid que llevan meses sin venderse.",
-    "sub": "Si tu piso está en los portales y no llega el comprador, casi siempre es por las fotos, el anuncio o el precio. Mándame el enlace y te digo en 24 horas qué está fallando. Sin compromiso.",
-    "ctaPrincipal": "Quiero saber por qué no se vende",
-    "ctaSecundario": "Escribirme por WhatsApp",
+    "eyebrow": "Venta de viviendas en Madrid",
+    "h1": "¿Quieres vender tu casa en Madrid? Estoy aquí para ayudarte.",
+    "sub": "Soy Ester, agente inmobiliaria independiente. Si tu piso está en los portales y no llega el comprador, mándame el enlace y te digo en 24 horas qué está fallando. Sin compromiso.",
+    "ctaPrincipal": "Quiero vender mi casa",
+    "ctaSecundario": "Conoce mi forma de trabajar",
+    "nota": "Te respondo en menos de 24 horas.",
     "confianza": [
       "Desde 2018",
       "Trato directo conmigo, no con un comercial",
       "[Solo cobro si vendo]",
       "Madrid y alrededores"
     ],
-    "imagenAlt": "Ester, agente inmobiliaria en Madrid, con americana ciruela y los brazos cruzados"
+    "imagenAlt": "Ester, agente inmobiliaria en Madrid, sentada en el sofá de un salón luminoso"
+  },
+  "valores": [
+    { "icono": "persona", "titulo": "Trato directo y personal", "texto": "Siempre serás tú quien me acompañe, sin intermediarios." },
+    { "icono": "casa", "titulo": "Estrategia a medida", "texto": "Analizo tu vivienda y diseño la mejor estrategia de venta." },
+    { "icono": "escudo", "titulo": "Máxima visibilidad", "texto": "Tu vivienda llega a los compradores más cualificados." },
+    { "icono": "estrella", "titulo": "Negociación experta", "texto": "Consigo el mejor precio y las mejores condiciones." },
+    { "icono": "manos", "titulo": "Acompañamiento total", "texto": "Desde la primera visita hasta la firma en notaría." }
+  ],
+  "acompano": {
+    "eyebrow": "Cómo te acompaño",
+    "titulo": "Un servicio exclusivo, antes, durante y después de la venta de tu casa",
+    "texto": "No solo se trata de vender una vivienda, sino de hacerlo bien. Te asesoro en cada paso, te mantengo informado y me encargo de todo para que tú no tengas que preocuparte por nada.",
+    "boton": "Conoce mi forma de trabajar",
+    "imagenAlt": "Ester sonriendo en un salón, con americana ciruela y pañuelo"
   },
   "problema": {
+    "eyebrow": "Lo que suele pasar",
     "titulo": "Por qué un piso se queda meses en el portal",
     "tarjetas": [
       {
@@ -30,7 +47,9 @@
     ]
   },
   "pasos": {
-    "titulo": "Qué hago yo",
+    "eyebrow": "Servicios",
+    "titulo": "Mi forma de trabajar",
+    "intro": "Cuatro pasos, siempre conmigo. Sin comerciales por medio y sin sorpresas.",
     "lista": [
       {
         "titulo": "Miro tu anuncio y te digo la verdad.",
@@ -51,8 +70,14 @@
     ]
   },
   "formulario": {
+    "eyebrow": "Sin compromiso",
     "titulo": "Te digo en 24 h por qué tu piso no se vende",
     "intro": "Déjame tu nombre, tu teléfono y el enlace de tu anuncio. Lo miro yo y te contesto por WhatsApp.",
+    "puntos": [
+      "Lo miro yo, no un programa.",
+      "Te contesto por WhatsApp en menos de 24 horas.",
+      "Si después quieres que lo venda yo, hablamos. Si no, te quedas con el diagnóstico."
+    ],
     "campos": {
       "nombre": "Nombre",
       "telefono": "Teléfono",
@@ -75,11 +100,13 @@
     }
   },
   "vendidos": {
-    "titulo": "Algunos pisos que he vendido",
+    "eyebrow": "Viviendas vendidas",
+    "titulo": "Casos reales, resultados reales",
     "texto": "Viviendas reales, en barrios reales. Sin número de portal, por respeto a quienes viven ahora en ellas.",
-    "enlace": "Ver todos los pisos vendidos"
+    "enlace": "Ver todas las viviendas vendidas"
   },
   "sobre": {
+    "eyebrow": "Sobre mí",
     "titulo": "Soy Ester",
     "texto": "Empecé en 2018 de la mano de mi tía, que llevaba muchos años en esto. Ella me enseñó que detrás de cada vivienda hay una historia, una familia y una decisión importante. Desde entonces acompaño a propietarios que quieren vender y a personas que buscan su próxima casa. Soy yo quien está al otro lado del teléfono, quien conoce el piso, quien acompaña las visitas y quien te mantiene informado en cada paso. Gran parte de mis clientes llegan recomendados por personas a las que ya he ayudado, y para mí no hay mejor reconocimiento.",
     "enlace": "Conocer a Ester",
@@ -91,6 +118,7 @@
     "boton": "Contarle a Ester qué busco"
   },
   "faq": {
+    "eyebrow": "Preguntas frecuentes",
     "titulo": "Preguntas que me hacen casi todos los propietarios",
     "lista": [
       {
@@ -124,8 +152,11 @@
     ]
   },
   "cierre": {
-    "titulo": "Mándame el enlace de tu anuncio. Te digo en 24 horas por qué no se vende.",
-    "boton": "Ir al formulario",
+    "eyebrow": "Tu casa merece el mejor cuidado",
+    "titulo": "¿Hablamos de la venta de tu casa?",
+    "texto": "Cuéntame qué necesitas y te ayudaré a valorar tu vivienda, resolver tus dudas y explicarte cómo puedo acompañarte en todo el proceso.",
+    "boton": "Quiero vender mi casa",
+    "nota": "Te respondo en menos de 24 horas.",
     "botonWhatsapp": "Escribirme por WhatsApp"
   }
 }

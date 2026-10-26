@@ -23,10 +23,10 @@ export default function GuiaPage() {
       <main>
         <Seccion fondo="crema" className="!pb-10">
           <Etiqueta className="text-ciruela">Guía gratuita</Etiqueta>
-          <Titulo as="h1" className="max-w-3xl text-[2.1rem] text-tinta sm:text-5xl">{guia.titulo}</Titulo>
+          <Titulo as="h1" className="max-w-3xl text-[2.1rem] text-ciruela sm:text-5xl">{guia.titulo}</Titulo>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-tinta-suave">{guia.sub}</p>
           <p className="mt-3 text-sm text-tinta-suave">Actualizado en {guia.actualizado}.</p>
-          <a href="#formulario" className="mt-8 inline-block rounded-full bg-ciruela px-7 py-4 font-semibold text-blanco transition-colors hover:bg-ciruela-oscuro">
+          <a href="#formulario" className="mt-8 inline-block rounded-lg bg-ciruela px-7 py-4 font-semibold text-blanco transition-colors hover:bg-ciruela-oscuro">
             Llevarme la guía en PDF
           </a>
         </Seccion>
@@ -35,7 +35,7 @@ export default function GuiaPage() {
           <div className="mx-auto max-w-3xl space-y-12 guia-prose">
             {guia.errores.map((e, i) => (
               <article key={e.q}>
-                <p className="font-display text-4xl text-rosa-oscuro">0{i + 1}</p>
+                <p className="font-display text-3xl text-dorado italic">0{i + 1}</p>
                 <h2 className="mt-2 font-display text-2xl leading-snug text-tinta sm:text-3xl">{e.q}</h2>
                 <p className="mt-4 text-lg">{e.a}</p>
               </article>

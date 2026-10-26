@@ -23,7 +23,7 @@ export default function VendidosPage() {
       <main>
         <Seccion fondo="crema" className="!pb-8">
           <Etiqueta className="text-ciruela">Pisos vendidos</Etiqueta>
-          <Titulo as="h1" className="max-w-2xl text-[2.1rem] text-tinta sm:text-5xl">Viviendas reales, en barrios reales.</Titulo>
+          <Titulo as="h1" className="max-w-2xl text-[2.1rem] text-ciruela sm:text-5xl">Viviendas reales, en barrios reales.</Titulo>
           <p className="mt-4 max-w-2xl text-lg leading-relaxed text-tinta-suave">
             Estas son algunas de las viviendas que he vendido en Madrid. Publico calle y barrio, nunca el número de portal, por respeto a quienes viven ahora en ellas. Cada una tenía su historia y su comprador.
           </p>
@@ -38,7 +38,7 @@ export default function VendidosPage() {
           <div className="mt-14 rounded-3xl bg-crema p-8 text-center sm:p-12">
             <Titulo className="text-tinta">¿El tuyo lleva meses sin venderse?</Titulo>
             <p className="mx-auto mt-3 max-w-xl text-tinta-suave">Mándame el enlace del anuncio y te digo en 24 horas qué está fallando. Sin compromiso.</p>
-            <Link href="/#formulario" className="mt-6 inline-block rounded-full bg-ciruela px-7 py-4 font-semibold text-blanco transition-colors hover:bg-ciruela-oscuro">
+            <Link href="/#formulario" className="mt-6 inline-block rounded-lg bg-ciruela px-7 py-4 font-semibold text-blanco transition-colors hover:bg-ciruela-oscuro">
               Quiero saber por qué no se vende
             </Link>
           </div>

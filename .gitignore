@@ -13,3 +13,6 @@ npm-debug.log*
 /originales
 
 .vercel
+
+# Material original de Ester (se procesa con scripts/estilo-ester.mjs)
+/info_ester

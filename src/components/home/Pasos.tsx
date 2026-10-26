@@ -4,14 +4,12 @@ import { home } from "@/lib/site";
 export function Pasos() {
   const p = home.pasos;
   return (
-    <Seccion fondo="crema">
+    <Seccion id="servicios" fondo="papel">
       <div className="grid gap-10 md:grid-cols-[0.8fr_1.2fr]">
         <div>
-          <Etiqueta className="text-ciruela">Cómo trabajo</Etiqueta>
-          <Titulo className="text-tinta">{p.titulo}</Titulo>
-          <p className="mt-4 max-w-md leading-relaxed text-tinta-suave">
-            Cuatro pasos, siempre conmigo. Sin comerciales por medio y sin sorpresas.
-          </p>
+          <Etiqueta className="text-ciruela">{p.eyebrow}</Etiqueta>
+          <Titulo className="text-ciruela">{p.titulo}</Titulo>
+          <p className="mt-4 max-w-md leading-relaxed text-tinta-suave">{p.intro}</p>
         </div>
         <ol className="space-y-4">
           {p.lista.map((paso, i) => (
