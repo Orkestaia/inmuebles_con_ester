@@ -1,0 +1,12 @@
+{
+  "name": "inmuebles-con-ester-social",
+  "private": true,
+  "type": "module",
+  "description": "Plantillas de Instagram (posts, carruseles, ads, overlays de reels) de Inmuebles con Ester renderizadas a PNG con Chrome.",
+  "scripts": {
+    "render": "node render.mjs"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^24.0.0"
+  }
+}
