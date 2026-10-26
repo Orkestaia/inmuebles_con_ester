@@ -18,7 +18,7 @@ export function Logo({ tamano = "nav", claro = false, className = "" }: { tamano
   const grande = tamano === "pie";
   const color = claro ? "text-crema" : "text-ciruela";
   return (
-    <Link href="/" aria-label="Inmuebles con Ester, inicio" className={`inline-block leading-none ${color} ${className}`}>
+    <Link href="/" aria-label="Inmuebles con Ester Madrid. Ir al inicio" className={`inline-block leading-none ${color} ${className}`}>
       <span className={`relative z-10 block font-display font-semibold tracking-[0.22em] uppercase ${grande ? "text-lg" : "text-[13px]"}`}>Inmuebles</span>
       <span className={`flex items-baseline gap-1.5 ${grande ? "mt-1" : "mt-0.5"}`}>
         <span className={`font-sans tracking-[0.3em] uppercase ${grande ? "text-[11px]" : "text-[8px]"}`}>con</span>

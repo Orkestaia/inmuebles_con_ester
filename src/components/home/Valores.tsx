@@ -40,7 +40,7 @@ export function Valores() {
             <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" className="text-ciruela" aria-hidden="true">
               {ICONOS[v.icono]}
             </svg>
-            <h3 className="mt-3 font-sans text-[15px] font-semibold text-ciruela">{v.titulo}</h3>
+            <p className="mt-3 font-sans text-[15px] font-semibold text-ciruela">{v.titulo}</p>
             <p className="mt-1 text-sm leading-snug text-tinta-suave">{v.texto}</p>
           </li>
         ))}
