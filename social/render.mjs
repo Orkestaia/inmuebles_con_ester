@@ -7,7 +7,10 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import puppeteer from "puppeteer-core";
-import { FORMATOS, PLANTILLAS } from "./templates.mjs";
+import { FORMATOS, PLANTILLAS as P1 } from "./templates.mjs";
+import { PLANTILLAS_V2 } from "./templates-v2.mjs";
+
+const PLANTILLAS = { ...P1, ...PLANTILLAS_V2 };
 
 const args = Object.fromEntries(process.argv.slice(2).reduce((a, x, i, arr) => (x.startsWith("--") ? [...a, [x.slice(2), arr[i + 1]]] : a), []));
 if (!args.plan || !args.out) {

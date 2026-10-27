@@ -259,3 +259,6 @@ export function overlayReel({ titulo, subtitulo = "", pos = "abajo" }) {
 }
 
 export const PLANTILLAS = { cita, consejo, vendido, ester, portada, slide, cierre, overlayReel };
+
+/* Helpers compartidos con templates-v2.mjs */
+export { C, PAPEL, base, logo, handle, rich, esc };
