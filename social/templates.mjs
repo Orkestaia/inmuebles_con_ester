@@ -71,7 +71,8 @@ function logo({ size = "s", claro = false } = {}) {
   return `<div class="logo ${size}" style="color:${col}"><span class="l1">Inmuebles</span><span class="l2"><span class="con">con</span><span class="ester">Ester</span></span><span class="l3">${llave}Madrid</span></div>`;
 }
 
-const handle = (claro = false) => `<div class="handle" style="color:${claro ? C.crema : C.vino}">@inmueblesconester</div>`;
+export const HANDLE = "@inmueblescon.ester";
+const handle = (claro = false) => `<div class="handle" style="color:${claro ? C.crema : C.vino}">${HANDLE}</div>`;
 
 /* ───────── Plantillas ───────── */
 
@@ -254,7 +255,7 @@ export function overlayReel({ titulo, subtitulo = "", pos = "abajo" }) {
 </style></head><body>
 <div class="logo"><span class="l1">Inmuebles</span><span class="ester">con Ester</span></div>
 <div class="card"><p class="t">${rich(titulo)}</p>${subtitulo ? `<p class="s">${rich(subtitulo)}</p>` : ""}</div>
-<div class="h">@inmueblesconester</div>
+<div class="h">${HANDLE}</div>
 </body></html>`;
 }
 
