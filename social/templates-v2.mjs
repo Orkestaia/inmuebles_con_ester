@@ -94,7 +94,7 @@ export function fachada({ plantas = 5, resaltar = null, ancho = 560, etiqueta = 
 }
 
 /* ───────── Piezas comunes ───────── */
-const contador = (n, total) => (n && total ? `<div class="display suave" style="position:absolute;top:84px;right:80px;font-size:32px;letter-spacing:.12em">${String(n).padStart(2, "0")} / ${String(total).padStart(2, "0")}</div>` : "");
+const contador = (n, total, oscuro = false) => (n && total ? `<div class="display" style="position:absolute;top:84px;right:80px;font-size:32px;letter-spacing:.12em;color:${oscuro ? "rgba(247,241,232,.75)" : C.tintaSuave}">${String(n).padStart(2, "0")} / ${String(total).padStart(2, "0")}</div>` : "");
 const pie = ({ desliza = false, script = "" } = {}) => `<div style="position:absolute;bottom:72px;left:80px;right:80px;display:flex;justify-content:space-between;align-items:end">
   ${handle()}
   ${desliza ? `<span class="suave" style="font-size:28px;letter-spacing:.22em;text-transform:uppercase">Desliza →</span>` : script ? `<span class="script vino" style="font-size:52px">${esc(script)}</span>` : ""}
@@ -252,7 +252,7 @@ ${pie({ desliza: n && n < total })}`,
 }
 
 /* 7 · Glosario: un término por slide */
-export function glosario({ n, total, termino, definicion, importa = "", formato = "feed" }) {
+export function glosario({ n, total, termino, definicion, importa = "", eyebrow = "Glosario para vender tu piso", formato = "feed" }) {
   const { w, h } = FORMATOS[formato];
   return base({
     w, h,
@@ -260,7 +260,7 @@ export function glosario({ n, total, termino, definicion, importa = "", formato 
 <div style="position:absolute;top:72px;left:80px">${logo({ size: "s" })}</div>
 ${contador(n, total)}
 <div style="${cuerpo(210, 190)}">
-  <p class="eyebrow vino" style="font-size:22px">Glosario para vender tu piso</p>
+  <p class="eyebrow vino" style="font-size:22px">${esc(eyebrow)}</p>
   <h2 class="display vino" style="font-size:118px;line-height:1;margin-top:22px;font-style:italic;font-weight:500">${esc(termino)}</h2>
   <div style="height:2px;background:${C.dorado};width:120px;margin:42px 0"></div>
   <p style="font-size:40px;line-height:1.42;color:${C.tinta}">${rich(definicion)}</p>
@@ -358,4 +358,31 @@ export function guardalo({ titulo = "Guárdalo para cuando lo necesites", texto 
   });
 }
 
-export const PLANTILLAS_V2 = { vendidoFachada, mapaVentas, portadaTexto, comparativa, mito, checklist, glosario, valor, pregunta, iceberg, guardalo };
+
+/* 12 · Explicador con fuente: documentos, impuestos, arras, señales */
+export function explicador({ n, total, eyebrow = "Para propietarios", titulo, dato = "", datoTexto = "", texto = "", caja = null, fuente = "", formato = "feed", oscuro = false }) {
+  const { w, h } = FORMATOS[formato];
+  const col = oscuro ? C.crema : C.vino;
+  const txt = oscuro ? "rgba(247,241,232,.88)" : C.tinta;
+  return base({
+    w, h, fondo: oscuro ? "vino" : "papel",
+    body: `
+<div style="position:absolute;top:72px;left:80px">${logo({ size: "s", claro: oscuro })}</div>
+${n ? contador(n, total, oscuro) : ""}
+<div style="${cuerpo(200, fuente ? 250 : 190)}">
+  <p class="eyebrow" style="font-size:22px;color:${oscuro ? C.rosa : C.vino}">${esc(eyebrow)}</p>
+  <h2 class="display" style="font-size:76px;line-height:1.06;margin-top:16px;font-weight:500;color:${col}">${rich(titulo)}</h2>
+  ${dato ? `<div style="display:flex;align-items:baseline;gap:24px;margin-top:34px"><p class="display" style="font-size:96px;line-height:1;font-style:italic;color:${C.dorado};white-space:nowrap">${esc(dato)}</p>${datoTexto ? `<p style="font-size:30px;line-height:1.3;color:${oscuro ? "rgba(247,241,232,.8)" : C.tintaSuave}">${rich(datoTexto)}</p>` : ""}</div>` : ""}
+  <div style="height:2px;background:${C.dorado};width:120px;margin:36px 0"></div>
+  ${texto ? `<p style="font-size:36px;line-height:1.42;color:${txt}">${rich(texto)}</p>` : ""}
+  ${caja ? `<div style="margin-top:34px;background:${oscuro ? "rgba(247,241,232,.08)" : C.rosaClaro};border-radius:20px;padding:28px 34px"><p class="eyebrow" style="font-size:19px;color:${oscuro ? C.rosa : C.vino}">${esc(caja.t)}</p><p style="font-size:30px;line-height:1.4;margin-top:10px;color:${oscuro ? "rgba(247,241,232,.86)" : C.tintaSuave}">${rich(caja.d)}</p></div>` : ""}
+</div>
+${fuente ? `<p style="position:absolute;left:80px;right:80px;bottom:160px;font-size:21px;line-height:1.35;font-style:italic;color:${oscuro ? "rgba(247,241,232,.6)" : C.tintaSuave}">Fuente: ${esc(fuente)}</p>` : ""}
+<div style="position:absolute;bottom:72px;left:80px;right:80px;display:flex;justify-content:space-between;align-items:end">
+  ${handle(oscuro)}
+  ${n && n < total ? `<span style="font-size:28px;letter-spacing:.22em;text-transform:uppercase;color:${oscuro ? "rgba(247,241,232,.7)" : C.tintaSuave}">Desliza →</span>` : ""}
+</div>`,
+  });
+}
+
+export const PLANTILLAS_V2 = { explicador, vendidoFachada, mapaVentas, portadaTexto, comparativa, mito, checklist, glosario, valor, pregunta, iceberg, guardalo };
